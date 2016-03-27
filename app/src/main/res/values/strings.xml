@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">PNU_Entrance_system</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_auth">auth</string>
+    <string name="title_activity_bgscan">bgscan</string>
+    <string name="title_activity_contactus">contactus</string>
+    <string name="title_activity_depregister">depregister</string>
+    <string name="title_activity_driver__home">Driver_Home</string>
+    <string name="title_activity_entrancelog">Entrancelog</string>
+    <string name="title_activity_invite">invite</string>
+    <string name="title_activity_main_reg">mainReg</string>
+    <string name="title_activity_policy">policy</string>
+    <string name="title_activity_refnum">refnum</string>
+    <string name="title_activity_register">Register</string>
+    <string name="title_activity_scan">scan</string>
+</resources>

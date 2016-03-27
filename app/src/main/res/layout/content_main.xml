@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.nkssa.pnu_entrance_system.MainActivity"
+    tools:showIn="@layout/activity_main" android:background="@drawable/hp"
+
+    >
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true"
+        android:maxWidth="260dp"
+        android:maxHeight="260dp"
+        android:scaleType="fitCenter"
+        android:id="@+id/logo"
+        android:src="@drawable/iogo"
+        android:layout_above="@+id/NationalID"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="45dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:id="@+id/NationalID"
+        android:background="#ffffff"
+        android:hint="National ID"
+        android:textColorHint="#b8b7b2"
+        android:textAlignment="center"
+
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:ems="10"
+        android:id="@+id/passwordHP"
+        android:background="#ffffff"
+        android:hint="Password"
+        android:textColorHint="#b8b7b2"
+        android:textAlignment="center"
+        android:layout_below="@+id/NationalID"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp" />
+
+    <Button
+        android:onClick="main_login"
+        android:layout_width="50dp"
+        android:layout_height="25dp"
+        android:text="Login"
+        android:id="@+id/main_login"
+        android:textColor="#ffffff"
+        android:background="#999999"
+        android:layout_below="@+id/passwordHP"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Forget password?"
+        android:id="@+id/forgetpasword"
+        android:layout_marginTop="21dp"
+        android:layout_below="@+id/main_login"
+        android:layout_centerHorizontal="true" />
+
+    <ImageButton
+        android:layout_width="150dp"
+        android:layout_height="35dp"
+        android:id="@+id/main_register"
+        android:background="@drawable/nu"
+        android:clickable="true"
+        android:layout_marginTop="30dp"
+        android:onClick="register_register"
+        android:layout_below="@+id/forgetpasword"
+        android:layout_toLeftOf="@+id/contactus"
+        android:layout_marginRight="13dp"
+        android:layout_marginEnd="13dp" />
+
+    <ImageButton
+        android:layout_width="150dp"
+        android:layout_height="35dp"
+        android:id="@+id/contactus"
+        android:background="@drawable/cu"
+        android:clickable="true"
+        android:onClick="contactus"
+        android:layout_alignTop="@+id/main_register"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="24dp"
+        android:layout_marginEnd="24dp" />
+
+</RelativeLayout>
