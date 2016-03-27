@@ -41,7 +41,7 @@ public class visitor extends Activity implements View.OnClickListener {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.content_visitor);
+        setContentView(R.layout.activity_visitor);
 
         String extraid= getIntent().getStringExtra("r_id");
 

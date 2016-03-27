@@ -76,7 +76,7 @@ public class MainActivity extends Activity {
             int tmp;
 
             try {
-                URL url = new URL("http://192.168.8.100/ES/login.php");
+                URL url = new URL("http://192.168.8.106/ES/login.php");
                 String urlParams = "r_id="+id+"&r_password="+password;
 
                 HttpURLConnection httpURLConnection = (HttpURLConnection) url.openConnection();
@@ -148,7 +148,8 @@ public class MainActivity extends Activity {
                 }
                 if (ROLE.equals("security")){
                     Intent i = new Intent(ctx, securityGuard.class);
-
+                    i.putExtra("r_id", ID);
+                    i.putExtra("r_name", NAME);
                     startActivity(i);
                 }
 

@@ -15,6 +15,7 @@ import android.support.v7.widget.Toolbar;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import org.json.JSONException;
@@ -34,7 +35,8 @@ public class securityGuard extends AppCompatActivity {
     int BLUETOOTH_REQUEST =1;
     EditText Refnum;
     String REfnum;
-    String sid , spassword;
+    String sid ,sname ,spassword  ,swelcome;
+    TextView swelcomeTV;
     Context ctx=this;
     final Context context = this;
     String RID= null, NAME = null, REFNUM = null, NUMBER = null;
@@ -44,9 +46,15 @@ public class securityGuard extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_security_guard);
         Refnum= (EditText) findViewById(R.id.refnum);
+        swelcomeTV = (TextView) findViewById(R.id.swelcomename);
 
-        sid = getIntent().getStringExtra("s_id");
-        spassword = getIntent().getStringExtra("s_password");
+        sid = getIntent().getStringExtra("r_id");
+        sname = getIntent().getStringExtra("r_name");
+        spassword = getIntent().getStringExtra("r_password");
+        swelcome = getIntent().getStringExtra("r_name");
+
+
+        swelcomeTV.setText(" " + sname);
 
         bn = (Button) findViewById(R.id.button1);
         bn.setOnClickListener(new View.OnClickListener() {
@@ -106,7 +114,7 @@ public class securityGuard extends AppCompatActivity {
             int tmp;
 
             try {
-                URL url = new URL("http://192.168.8.100/ES/refnum.php");
+                URL url = new URL("http://192.168.8.106/ES/refnum.php");
                 String urlParams = "Refnum="+Refnum;
 
                 HttpURLConnection httpURLConnection = (HttpURLConnection) url.openConnection();

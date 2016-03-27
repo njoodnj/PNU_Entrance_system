@@ -5,7 +5,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:fitsSystemWindows="true"
-    tools:context="com.example.nkssa.pnu_entrance_system.contactus">
+    tools:context="com.example.nkssa.pnu_entrance_system.contactus"
+    android:background="#fef6c8">
 
     <android.support.design.widget.AppBarLayout
         android:layout_width="match_parent"
@@ -22,7 +23,7 @@
         android:id="@+id/toolbar"
         android:layout_width="match_parent"
         android:layout_height="?attr/actionBarSize"
-        android:background="#f8c256"
+        android:background="#999999"
         app:popupTheme="@style/AppTheme.PopupOverlay" />
 
 </android.support.design.widget.CoordinatorLayout>
