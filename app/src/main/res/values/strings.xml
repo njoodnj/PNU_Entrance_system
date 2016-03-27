@@ -13,4 +13,7 @@
     <string name="title_activity_refnum">refnum</string>
     <string name="title_activity_register">Register</string>
     <string name="title_activity_scan">scan</string>
+    <string name="title_activity_security_guard">securityGuard</string>
+    <string name="title_activity_update">update</string>
+    <string name="title_activity_user__home">User_Home</string>
 </resources>

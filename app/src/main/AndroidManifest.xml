@@ -78,6 +78,18 @@
         <activity
             android:name=".scan"
             android:label="@string/title_activity_scan"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".securityGuard"
+            android:label="@string/title_activity_security_guard"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".update"
+            android:label="@string/title_activity_update"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".User_Home"
+            android:label="@string/title_activity_user__home"
             android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>
 
