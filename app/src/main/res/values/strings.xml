@@ -16,4 +16,5 @@
     <string name="title_activity_security_guard">securityGuard</string>
     <string name="title_activity_update">update</string>
     <string name="title_activity_user__home">User_Home</string>
+    <string name="title_activity_visitor">visitor</string>
 </resources>

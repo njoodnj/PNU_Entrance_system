@@ -90,6 +90,10 @@
         <activity
             android:name=".User_Home"
             android:label="@string/title_activity_user__home"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".visitor"
+            android:label="@string/title_activity_visitor"
             android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>
 

@@ -82,4 +82,3 @@ public class scan extends AppCompatActivity {
 
 
 }
-
