@@ -5,7 +5,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:fitsSystemWindows="true"
-    tools:context="com.example.nkssa.pnu_entrance_system.scan">
+    tools:context="com.example.nkssa.pnu_entrance_system.scan"
+    android:background="#fef6c8">
 
 
     <android.support.design.widget.AppBarLayout
