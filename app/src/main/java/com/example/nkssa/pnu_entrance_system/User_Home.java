@@ -16,7 +16,7 @@ import android.widget.TextView;
 
 public class User_Home extends Activity {
 
-    String id , name,passwordU, email, address, welcome ;
+    String id , name,passwordU, email, address, welcome, pass ;
     TextView idTV ,nameTV, emailTV , addressTV, welcomeTV;
     final Context context = this;
     Context ctx=this;
@@ -37,7 +37,7 @@ public class User_Home extends Activity {
         email = getIntent().getStringExtra("r_email");
         address = getIntent().getStringExtra("r_address");
         welcome = getIntent().getStringExtra("r_name");
-
+        pass = getIntent().getStringExtra("r_password");
 
         idTV.setText("ID No:" + id);
         nameTV.setText("Name: " + name);
@@ -50,7 +50,7 @@ public class User_Home extends Activity {
     public void update_update (View v){
         Intent i = new Intent(ctx, update.class);
         i.putExtra("r_id", id);
-        i.putExtra("r_password", passwordU);
+        i.putExtra("r_password", pass);
         i.putExtra("r_address", address);
         i.putExtra("r_name", name);
         i.putExtra("r_name", welcome);
