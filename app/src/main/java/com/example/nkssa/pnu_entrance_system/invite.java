@@ -31,7 +31,7 @@ public class invite extends Activity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.content_invite);
+        setContentView(R.layout.activity_invite);
 
         rid = (TextView) findViewById(R.id.rid);
         name = (EditText) findViewById(R.id.register_name);

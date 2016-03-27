@@ -41,7 +41,7 @@ public class Entrancelog extends Activity implements View.OnClickListener {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.content_entrancelog);
+        setContentView(R.layout.activity_entrancelog);
 
 
         if (android.os.Build.VERSION.SDK_INT > 9) {

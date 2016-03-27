@@ -19,7 +19,7 @@ public class refnum extends Activity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.content_refnum);
+        setContentView(R.layout.activity_refnum);
 
         new Handler().postDelayed(new Runnable() {
             @Override
