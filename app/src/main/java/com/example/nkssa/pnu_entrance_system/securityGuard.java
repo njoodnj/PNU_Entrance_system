@@ -114,7 +114,7 @@ public class securityGuard extends AppCompatActivity {
             int tmp;
 
             try {
-                URL url = new URL("http://192.168.8.106/ES/refnum.php");
+                URL url = new URL("http://192.168.8.100/ES/refnum.php");
                 String urlParams = "Refnum="+Refnum;
 
                 HttpURLConnection httpURLConnection = (HttpURLConnection) url.openConnection();

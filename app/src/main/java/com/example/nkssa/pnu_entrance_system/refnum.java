@@ -42,10 +42,10 @@ public class refnum extends Activity {
         Number = getIntent().getStringExtra("Number");
         Err = getIntent().getStringExtra("err");
 
-        nameTV.setText("rid " + rid);
-        nameTV.setText("name " + name);
-        RefnumTV.setText("refrence number is: " + Refnum);
-        NumberTV.setText("number of visits: " + Number);
+        ridTV.setText("" + rid);
+        nameTV.setText("" + name);
+        RefnumTV.setText("" + Refnum);
+        NumberTV.setText("" + Number);
         err.setText(Err);
     }
 
