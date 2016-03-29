@@ -56,8 +56,12 @@ public class invite extends Activity {
             Number.setError( "number of visits is required!" );}
         else {
             BackGround b = new BackGround();
-            b.execute(Rid,Name, NUmber);
-            startActivity(new Intent(this,visitor.class));}
+            b.execute(Rid, Name, NUmber);
+            Intent i = new Intent(ctx, visitor.class);
+            i.putExtra("r_id", Rid);
+            startActivity(i);
+
+        }
     }
 
     class BackGround extends AsyncTask<String, String, String> {
@@ -106,6 +110,7 @@ public class invite extends Activity {
                 s="Data saved successfully.";
             }
             Toast.makeText(ctx, s, Toast.LENGTH_LONG).show();
+
         }
     }
 

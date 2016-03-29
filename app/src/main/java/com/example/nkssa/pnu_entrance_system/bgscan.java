@@ -25,15 +25,18 @@ import java.net.URL;
 public class bgscan extends AppCompatActivity {
 
     EditText id, password;
-    String Id, Password,mac1;
+    String Id, Password,sname,sid;
     Context ctx=this;
-    String ID=null, NAME=null, PASSWORD=null, EMAIL=null, ADDRESS=null, ROLE=null;
+    String ID=null, NAME=null, PASSWORD=null, EMAIL=null, ADDRESS=null, ROLE=null, VALID=null;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         Id = getIntent().getStringExtra("mac"); // Id is the mac
         Password = "";
+        sname = getIntent().getStringExtra("r_name");
+        sid = getIntent().getStringExtra("id");
+
 
         BackGround b = new BackGround();
         b.execute(Id, Password);
@@ -90,11 +93,20 @@ public class bgscan extends AppCompatActivity {
                 EMAIL = user_data.getString("r_email");
                 ADDRESS = user_data.getString("r_address");
                 ROLE= user_data.getString("r_role");
+                VALID = user_data.getString("valid");
             } catch (JSONException e) {
                 e.printStackTrace();
 
             }
+            if(VALID.equals("not_valid")){
 
+                s="The user is not validated yet";
+                Toast.makeText(ctx, s, Toast.LENGTH_LONG).show();
+                Intent i = new Intent(ctx, securityGuard.class);
+                startActivity(i);
+            }
+
+            if(VALID.equals("valid")) {
             if(ROLE.equals("resident") ||ROLE.equals("dependent") ){
                 //  s="resident or dep";
                 //  Toast.makeText(ctx, s, Toast.LENGTH_LONG).show();
@@ -104,6 +116,10 @@ public class bgscan extends AppCompatActivity {
                 i.putExtra("r_password", PASSWORD);
                 i.putExtra("r_email", EMAIL);
                 i.putExtra("r_address", ADDRESS);
+                i.putExtra("r_name", sname);
+                i.putExtra("id",sid);
+
+
                 startActivity(i);}
             if (ROLE.equals("driver")){
                 //s="driver";
@@ -114,6 +130,8 @@ public class bgscan extends AppCompatActivity {
                 i.putExtra("r_password", PASSWORD);
                 i.putExtra("r_email", EMAIL);
                 i.putExtra("r_address", ADDRESS);
+                i.putExtra("r_name", sname);
+                i.putExtra("id",sid);
 
                 startActivity(i);
             }
@@ -126,6 +144,6 @@ public class bgscan extends AppCompatActivity {
                 startActivity(i);
             }}
 
-    }
+    }}
 
 }

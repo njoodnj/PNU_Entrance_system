@@ -25,11 +25,14 @@ public class scan extends AppCompatActivity {
     private ArrayList<String> mDeviceList = new ArrayList<String>();
     private BluetoothAdapter mBluetoothAdapter;
     Context ctx = this;
+    String sname,sid;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_scan);
 
+        sname = getIntent().getStringExtra("r_name");
+        sid = getIntent().getStringExtra("id");
 
         listView = (ListView) findViewById(R.id.listView);
 
@@ -66,6 +69,8 @@ public class scan extends AppCompatActivity {
                         //Toast.makeText(ctx, mac, Toast.LENGTH_LONG).show();
                         Intent i = new Intent(ctx, bgscan.class);
                         i.putExtra("mac",mac);
+                        i.putExtra("id",sid);
+                        i.putExtra("r_name",sname);
                         startActivity(i);
 
                     }

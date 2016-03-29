@@ -13,7 +13,7 @@ import android.widget.TextView;
 
 public class refnum extends Activity {
 
-    String rid, name, Refnum, Number, Err;
+    String rid, name, Refnum, Number, Err, sname;
     TextView ridTV, nameTV, RefnumTV, NumberTV, err;
 
     @Override
@@ -25,10 +25,12 @@ public class refnum extends Activity {
             @Override
             public void run() {
                 final Intent mainIntent = new Intent(refnum.this, securityGuard.class);
+                mainIntent.putExtra("r_name", sname);
                 refnum.this.startActivity(mainIntent);
                 refnum.this.finish();
             }
         }, 10000);
+        sname = getIntent().getStringExtra("r_name");
 
         ridTV = (TextView) findViewById(R.id.rid);
         nameTV = (TextView) findViewById(R.id.name);
