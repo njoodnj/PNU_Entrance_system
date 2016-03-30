@@ -32,6 +32,7 @@ public class visitor extends Activity implements View.OnClickListener {
     visitorphp biodata = new visitorphp();
     TableLayout visitor;
 
+
     Button buttonTambahBiodata;
     //ArrayList<Button> buttonEdit = new ArrayList<Button>();
     ArrayList<Button> buttonDelete = new ArrayList<Button>();
