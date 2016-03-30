@@ -78,6 +78,8 @@
                 android:textAppearance="?android:attr/textAppearanceMedium"/>
         </TableRow>
 
+
+
         <TableRow
             android:background="#ffffff"
             android:layout_marginLeft="1dp"

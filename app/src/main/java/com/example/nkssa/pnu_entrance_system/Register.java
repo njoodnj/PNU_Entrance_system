@@ -77,6 +77,7 @@ public class Register extends AppCompatActivity {
     }
 
 
+
     public void register_register(View v) {
 
         id = r_ID.getText().toString();

@@ -284,6 +284,7 @@
         android:layout_alignEnd="@+id/reemail"
         android:layout_alignBottom="@+id/r_submit" />
 
+
     <TextView
         android:id="@+id/mac"
         android:layout_width="wrap_content"

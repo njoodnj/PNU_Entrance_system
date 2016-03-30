@@ -49,6 +49,7 @@ public class invite extends Activity {
     }
 
 
+
     public void register_register(View v){
         Rid = rid.getText().toString();
         Name = name.getText().toString();

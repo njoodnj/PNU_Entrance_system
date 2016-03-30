@@ -17,6 +17,7 @@ public class refnum extends Activity {
     TextView ridTV, nameTV, RefnumTV, NumberTV, err;
 
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

@@ -33,6 +33,7 @@ public class visitor extends Activity implements View.OnClickListener {
     TableLayout visitor;
 
 
+
     Button buttonTambahBiodata;
     //ArrayList<Button> buttonEdit = new ArrayList<Button>();
     ArrayList<Button> buttonDelete = new ArrayList<Button>();
