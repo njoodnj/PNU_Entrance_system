@@ -10,6 +10,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.View;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import java.io.IOException;
 import java.io.InputStream;
@@ -55,7 +56,7 @@ public class auth extends AppCompatActivity {
         startActivity(new Intent(this, securityGuard.class));
     }
     public void decline(View v){
-        startActivity(new Intent(this, securityGuard.class));
+        startActivity(new Intent (this, securityGuard.class));
     }
     class BackGround extends AsyncTask<String, String, String> {
 

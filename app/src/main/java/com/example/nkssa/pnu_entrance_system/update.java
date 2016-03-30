@@ -62,11 +62,23 @@ public class update extends Activity {
         welcome = getIntent().getStringExtra("r_name");
 
         if (currentpass.getText().toString().length() == 0) {
-            currentpass.setError("current password is required for updating!"); }
-        if (!pass.equals(repass)) {
-            repassword.setError("Password dose not match");}
+            currentpass.setError("current password is required for updating!");
+        }
+        if (emailaddress.getText().toString().length() == 0) {
+            email = getIntent().getStringExtra("r_email");
+        }
+        if (password.getText().toString().length() == 0) {
+            pass = getIntent().getStringExtra("r_password");
+        }
+        if (password.getText().toString().length() != 0) {
+            if (!pass.equals(repass)) {
+                repassword.setError("Password dose not match");
+            }
+        }
+
         if (!cupass.equals(passwordU))
         {currentpass.setError("wrong current password");}
+
 
         else {
             BackGround backU = new BackGround();
@@ -130,6 +142,7 @@ public class update extends Activity {
             i.putExtra("r_address", address);
             i.putExtra("r_name", name);
             i.putExtra("r_name", welcome);
+            i.putExtra("r_password",pass);
             startActivity(i);
 
         }

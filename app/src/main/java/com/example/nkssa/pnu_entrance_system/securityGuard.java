@@ -71,7 +71,10 @@ public class securityGuard extends AppCompatActivity {
                     }
                     if (b_adapter.isEnabled()) {
 
-                        startActivity(new Intent(securityGuard.this, scan.class));
+                        Intent i = new Intent(ctx, scan.class);
+                        i.putExtra("r_name",sname);
+                        i.putExtra("id",sid);
+                        startActivity(i);
                     }
                 }
             }
@@ -114,7 +117,7 @@ public class securityGuard extends AppCompatActivity {
             int tmp;
 
             try {
-                URL url = new URL("http://192.168.8.106/ES/refnum.php");
+                URL url = new URL("http://192.168.8.100/ES/refnum.php");
                 String urlParams = "Refnum="+Refnum;
 
                 HttpURLConnection httpURLConnection = (HttpURLConnection) url.openConnection();
@@ -163,6 +166,7 @@ public class securityGuard extends AppCompatActivity {
                 i.putExtra("name", NAME);
                 i.putExtra("Refnum", REFNUM);
                 i.putExtra("Number", NUMBER);
+                i.putExtra("r_name", sname);
                 i.putExtra("err", err);
                 startActivity(i);
 

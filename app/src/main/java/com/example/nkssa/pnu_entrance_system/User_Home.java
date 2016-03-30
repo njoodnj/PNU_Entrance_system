@@ -52,6 +52,7 @@ public class User_Home extends Activity {
         i.putExtra("r_id", id);
         i.putExtra("r_password", pass);
         i.putExtra("r_address", address);
+        i.putExtra("r_email",email);
         i.putExtra("r_name", name);
         i.putExtra("r_name", welcome);
         startActivity(i);}
