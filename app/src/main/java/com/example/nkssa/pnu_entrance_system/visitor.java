@@ -146,6 +146,10 @@ public class visitor extends Activity implements View.OnClickListener {
         }
     }
 
+    public void visitor_cancel(View v){
+
+        startActivity(new Intent(this,User_Home.class));
+    }
 
     public  void invite1(View view){
         String extraid= getIntent().getStringExtra("r_id");
