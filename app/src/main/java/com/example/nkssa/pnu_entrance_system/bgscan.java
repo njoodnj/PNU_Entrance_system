@@ -116,7 +116,6 @@ public class bgscan extends AppCompatActivity {
                 i.putExtra("r_password", PASSWORD);
                 i.putExtra("r_email", EMAIL);
                 i.putExtra("r_address", ADDRESS);
-                i.putExtra("r_name", sname);
                 i.putExtra("id",sid);
 
 
@@ -130,7 +129,6 @@ public class bgscan extends AppCompatActivity {
                 i.putExtra("r_password", PASSWORD);
                 i.putExtra("r_email", EMAIL);
                 i.putExtra("r_address", ADDRESS);
-                i.putExtra("r_name", sname);
                 i.putExtra("id",sid);
 
                 startActivity(i);
