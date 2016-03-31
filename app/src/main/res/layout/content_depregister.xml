@@ -268,9 +268,23 @@
         android:textColor="#ffffff"
         android:background="#999999"
         android:onClick="register_register"
-        android:layout_alignTop="@+id/popup_pol"
-        android:layout_alignRight="@+id/ID"
-        android:layout_alignEnd="@+id/ID" />
+        android:layout_below="@+id/policy"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cancel"
+        android:id="@+id/r_cancel"
+        android:textColor="#ffffff"
+        android:background="#999999"
+        android:onClick="register_cancel"
+        android:layout_below="@+id/policy"
+        android:layout_alignRight="@+id/reemail"
+        android:layout_alignEnd="@+id/reemail"
+        android:layout_alignBottom="@+id/r_submit" />
+
+
     <TextView
         android:id="@+id/mac"
         android:layout_width="wrap_content"
@@ -282,3 +296,4 @@
         android:layout_alignParentStart="true"
         android:layout_marginBottom="25dp" />
 </RelativeLayout>
+

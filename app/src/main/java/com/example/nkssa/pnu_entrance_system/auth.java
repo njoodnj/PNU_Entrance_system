@@ -71,7 +71,7 @@ public class auth extends AppCompatActivity {
 
 
             try {
-                URL url = new URL("http://192.168.8.100/ES/auth.php");
+                URL url = new URL("http://192.168.8.106/ES/auth.php");
 
                 String urlParams = "ID="+ID+"&NAME="+NAME;
 

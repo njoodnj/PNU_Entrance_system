@@ -43,6 +43,13 @@ public class invite extends Activity {
 
     }
 
+    public void invite_cancel(View v){
+
+        startActivity(new Intent(this,visitor.class));
+    }
+
+
+
     public void register_register(View v){
         Rid = rid.getText().toString();
         Name = name.getText().toString();
@@ -76,7 +83,7 @@ public class invite extends Activity {
             int tmp;
 
             try {
-                URL url = new URL("http://192.168.8.100/ES/invite.php");
+                URL url = new URL("http://192.168.8.106/ES/invite.php");
                 String urlParams = "rid="+rid+"&name="+name+"&Number="+Number;
 
                 HttpURLConnection httpURLConnection = (HttpURLConnection) url.openConnection();

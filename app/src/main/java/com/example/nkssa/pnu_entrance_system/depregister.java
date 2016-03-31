@@ -74,6 +74,11 @@ public class depregister extends Activity {
 
     }
 
+    public void register_cancel(View v){
+
+        startActivity(new Intent(this,mainReg.class));
+    }
+
     public void register_register(View v) {
 
 
@@ -179,6 +184,8 @@ public class depregister extends Activity {
 
             startActivity(i);
         }
+
+
 
 
     }

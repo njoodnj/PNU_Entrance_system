@@ -16,6 +16,8 @@ public class refnum extends Activity {
     String rid, name, Refnum, Number, Err, sname;
     TextView ridTV, nameTV, RefnumTV, NumberTV, err;
 
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

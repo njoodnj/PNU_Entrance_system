@@ -63,6 +63,21 @@ public class Register extends AppCompatActivity {
 
     }
 
+    public void policy_pop(View view)
+    {
+
+        Intent i = new Intent(getApplicationContext(),policy.class);
+        startActivity(i);
+
+    }
+
+    public void register_cancel(View v){
+
+        startActivity(new Intent(this,mainReg.class));
+    }
+
+
+
     public void register_register(View v) {
 
         id = r_ID.getText().toString();

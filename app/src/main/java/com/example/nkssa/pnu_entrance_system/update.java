@@ -44,6 +44,11 @@ public class update extends Activity {
 
     }
 
+    public void update_cancel(View v){
+
+        startActivity(new Intent(this, User_Home.class));
+    }
+
     public void update_function(View v) {
 
         id = getIntent().getStringExtra("r_id");
@@ -83,6 +88,7 @@ public class update extends Activity {
 
     class BackGround extends AsyncTask<String, String, String> {
 
+
         @Override
         protected String doInBackground(String... params) {
             String id = params[0];
@@ -95,8 +101,9 @@ public class update extends Activity {
             String data = "";
             int tmp;
 
+
             try {
-                URL url = new URL("http://192.168.8.100/ES/update.php");
+                URL url = new URL("http://192.168.8.106/ES/update.php");
                 String urlParams = "id="+id+"&email="+email+"&pass="+pass+"&cupass="+cupass+"&address="+address+"&name="+name+"&welcome="+welcome;
 
                 HttpURLConnection httpURLConnection = (HttpURLConnection) url.openConnection();
