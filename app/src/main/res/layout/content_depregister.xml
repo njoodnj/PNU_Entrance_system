@@ -30,10 +30,10 @@
         android:textAppearance="?android:attr/textAppearanceMedium"
         android:text="National ID:"
         android:id="@+id/textView2"
-        android:layout_marginTop="44dp"
+        android:layout_marginTop="41dp"
         android:layout_below="@+id/textView"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
+        android:layout_toLeftOf="@+id/repassword"
+        android:layout_toStartOf="@+id/repassword" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -43,8 +43,8 @@
         android:id="@+id/textView3"
         android:layout_marginTop="15dp"
         android:layout_below="@+id/textView2"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
+        android:layout_alignRight="@+id/textView2"
+        android:layout_alignEnd="@+id/textView2" />
 
     <EditText
         android:layout_width="wrap_content"
@@ -54,11 +54,8 @@
         android:id="@+id/ID"
         android:background="#ffffff"
         android:layout_above="@+id/textView3"
-        android:layout_toRightOf="@+id/textView2"
-        android:layout_marginLeft="18dp"
-        android:layout_marginStart="18dp"
-        android:layout_alignRight="@+id/FullName"
-        android:layout_alignEnd="@+id/FullName" />
+        android:layout_toRightOf="@+id/textView4"
+        android:layout_toEndOf="@+id/textView4" />
 
     <EditText
         android:layout_width="wrap_content"
@@ -67,12 +64,9 @@
         android:ems="10"
         android:id="@+id/FullName"
         android:background="#ffffff"
-        android:layout_alignTop="@+id/textView3"
-        android:layout_toRightOf="@+id/textView3"
-        android:layout_marginLeft="17dp"
-        android:layout_marginStart="17dp"
-        android:layout_alignRight="@+id/repassword"
-        android:layout_alignEnd="@+id/repassword" />
+        android:layout_above="@+id/textView4"
+        android:layout_alignLeft="@+id/Password"
+        android:layout_alignStart="@+id/Password" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -82,8 +76,8 @@
         android:id="@+id/textView4"
         android:layout_marginTop="16dp"
         android:layout_below="@+id/textView3"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
+        android:layout_alignLeft="@+id/textView3"
+        android:layout_alignStart="@+id/textView3" />
 
     <EditText
         android:layout_width="wrap_content"
@@ -92,11 +86,9 @@
         android:ems="10"
         android:id="@+id/Password"
         android:background="#ffffff"
-        android:layout_above="@+id/textView5"
-        android:layout_alignLeft="@+id/FullName"
-        android:layout_alignStart="@+id/FullName"
-        android:layout_alignRight="@+id/repassword"
-        android:layout_alignEnd="@+id/repassword" />
+        android:layout_alignTop="@+id/textView4"
+        android:layout_alignLeft="@+id/repassword"
+        android:layout_alignStart="@+id/repassword" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -107,7 +99,8 @@
         android:layout_below="@+id/textView4"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
-        android:layout_marginTop="15dp" />
+        android:layout_marginTop="15dp"
+        android:textSize="15dp" />
 
     <EditText
         android:layout_width="wrap_content"
@@ -116,8 +109,8 @@
         android:ems="10"
         android:id="@+id/repassword"
         android:layout_alignBottom="@+id/textView5"
-        android:layout_toRightOf="@+id/textView5"
         android:layout_toEndOf="@+id/textView5"
+        android:layout_toRightOf="@+id/textView5"
         android:background="#ffffff"
         android:autoText="false" />
 
@@ -127,10 +120,10 @@
         android:textAppearance="?android:attr/textAppearanceMedium"
         android:text="Email:"
         android:id="@+id/textView6"
+        android:layout_marginTop="19dp"
         android:layout_below="@+id/textView5"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_marginTop="16dp" />
+        android:layout_alignRight="@+id/textView7"
+        android:layout_alignEnd="@+id/textView7" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -163,8 +156,8 @@
         android:id="@+id/reemail"
         android:background="#ffffff"
         android:layout_alignTop="@+id/textView7"
-        android:layout_alignRight="@+id/repassword"
-        android:layout_alignEnd="@+id/repassword" />
+        android:layout_toRightOf="@+id/textView4"
+        android:layout_toEndOf="@+id/textView4" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -172,10 +165,10 @@
         android:textAppearance="?android:attr/textAppearanceMedium"
         android:text="Address:"
         android:id="@+id/addresst"
+        android:layout_marginTop="18dp"
         android:layout_below="@+id/textView7"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_marginTop="15dp" />
+        android:layout_alignRight="@+id/textView7"
+        android:layout_alignEnd="@+id/textView7" />
     <EditText
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -185,7 +178,8 @@
         android:background="#ffffff"
         android:layout_alignTop="@+id/addresst"
         android:layout_toRightOf="@+id/textView3"
-        android:layout_toEndOf="@+id/textView3" />
+        android:layout_toEndOf="@+id/textView3"
+        android:hint="Building and Apt No." />
 
     <TextView
         android:layout_width="wrap_content"
@@ -193,11 +187,10 @@
         android:textAppearance="?android:attr/textAppearanceMedium"
         android:text="Relation:"
         android:id="@+id/relationtx"
-        android:layout_below="@+id/addresst"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
         android:layout_marginTop="15dp"
-        />
+        android:layout_below="@+id/addresst"
+        android:layout_alignLeft="@+id/addresst"
+        android:layout_alignStart="@+id/addresst" />
 
     <EditText
         android:layout_width="wrap_content"
@@ -207,8 +200,10 @@
         android:background="#ffffff"
         android:layout_alignTop="@+id/relationtx"
         android:layout_toRightOf="@+id/policy"
-        android:layout_alignRight="@+id/address"
-        android:layout_alignEnd="@+id/address" />
+        android:layout_alignStart="@+id/address"
+        android:layout_alignEnd="@+id/address"
+        android:layout_alignLeft="@+id/address"
+        android:layout_alignRight="@+id/address"/>
 
     <TextView
         android:layout_width="wrap_content"
@@ -216,10 +211,10 @@
         android:textAppearance="?android:attr/textAppearanceMedium"
         android:text="Resident ID:"
         android:id="@+id/rid"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_marginTop="18dp"
-        android:layout_below="@+id/relationtx" />
+        android:layout_marginTop="17dp"
+        android:layout_below="@+id/relationtx"
+        android:layout_toLeftOf="@+id/RID"
+        android:layout_toStartOf="@+id/RID" />
     <EditText
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -228,8 +223,8 @@
         android:id="@+id/RID"
         android:background="#ffffff"
         android:layout_alignTop="@+id/rid"
-        android:layout_toRightOf="@+id/textView7"
-        android:layout_toEndOf="@+id/textView7" />
+        android:layout_alignLeft="@+id/address"
+        android:layout_alignStart="@+id/address" />
 
     <CheckBox
         android:layout_width="wrap_content"
@@ -269,7 +264,10 @@
         android:background="#999999"
         android:onClick="register_register"
         android:layout_below="@+id/policy"
-        android:layout_centerHorizontal="true" />
+        android:layout_toLeftOf="@+id/r_cancel"
+        android:layout_toStartOf="@+id/r_cancel"
+        android:layout_marginRight="17dp"
+        android:layout_marginEnd="17dp" />
 
     <Button
         android:layout_width="wrap_content"

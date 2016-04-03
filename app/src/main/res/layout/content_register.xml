@@ -32,10 +32,10 @@
         android:textAppearance="?android:attr/textAppearanceMedium"
         android:text="National ID:"
         android:id="@+id/textView2"
-        android:layout_marginTop="44dp"
+        android:layout_marginTop="41dp"
         android:layout_below="@+id/textView"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
+        android:layout_alignRight="@+id/textView6"
+        android:layout_alignEnd="@+id/textView6" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -45,8 +45,8 @@
         android:id="@+id/textView3"
         android:layout_marginTop="15dp"
         android:layout_below="@+id/textView2"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
+        android:layout_alignRight="@+id/textView2"
+        android:layout_alignEnd="@+id/textView2" />
 
     <EditText
         android:layout_width="wrap_content"
@@ -55,10 +55,9 @@
         android:ems="10"
         android:id="@+id/ID"
         android:background="#ffffff"
-        android:layout_above="@+id/textView3"
-        android:layout_toRightOf="@+id/textView2"
-        android:layout_marginLeft="18dp"
-        android:layout_marginStart="18dp"
+        android:layout_alignTop="@+id/textView2"
+        android:layout_alignLeft="@+id/FullName"
+        android:layout_alignStart="@+id/FullName"
         android:layout_alignRight="@+id/FullName"
         android:layout_alignEnd="@+id/FullName" />
 
@@ -70,11 +69,8 @@
         android:id="@+id/FullName"
         android:background="#ffffff"
         android:layout_alignTop="@+id/textView3"
-        android:layout_toRightOf="@+id/textView3"
-        android:layout_marginLeft="17dp"
-        android:layout_marginStart="17dp"
-        android:layout_alignRight="@+id/repassword"
-        android:layout_alignEnd="@+id/repassword" />
+        android:layout_alignLeft="@+id/Password"
+        android:layout_alignStart="@+id/Password" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -82,10 +78,10 @@
         android:textAppearance="?android:attr/textAppearanceMedium"
         android:text="Password:"
         android:id="@+id/textView4"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="15dp"
         android:layout_below="@+id/textView3"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
+        android:layout_alignRight="@+id/textView3"
+        android:layout_alignEnd="@+id/textView3" />
 
     <EditText
         android:layout_width="wrap_content"
@@ -94,11 +90,9 @@
         android:ems="10"
         android:id="@+id/Password"
         android:background="#ffffff"
-        android:layout_above="@+id/textView5"
-        android:layout_alignLeft="@+id/FullName"
-        android:layout_alignStart="@+id/FullName"
-        android:layout_alignRight="@+id/repassword"
-        android:layout_alignEnd="@+id/repassword" />
+        android:layout_alignTop="@+id/textView4"
+        android:layout_toRightOf="@+id/textView5"
+        android:layout_toEndOf="@+id/textView5" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -106,10 +100,11 @@
         android:textAppearance="?android:attr/textAppearanceMedium"
         android:text="Re-enter Password:"
         android:id="@+id/textView5"
+        android:layout_marginTop="17dp"
+        android:textSize="15dp"
         android:layout_below="@+id/textView4"
         android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_marginTop="15dp" />
+        android:layout_alignParentStart="true" />
 
     <EditText
         android:layout_width="wrap_content"
@@ -117,33 +112,11 @@
         android:inputType="textPassword"
         android:ems="10"
         android:id="@+id/repassword"
-        android:layout_alignBottom="@+id/textView5"
-        android:layout_toRightOf="@+id/textView5"
-        android:layout_toEndOf="@+id/textView5"
         android:background="#ffffff"
-        android:autoText="false" />
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceMedium"
-        android:text="Email:"
-        android:id="@+id/textView6"
-        android:layout_below="@+id/textView5"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_marginTop="16dp" />
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceMedium"
-        android:text="Re-enter Email:"
-        android:id="@+id/textView7"
-        android:layout_below="@+id/textView6"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_marginTop="18dp" />
+        android:autoText="false"
+        android:layout_alignTop="@+id/textView5"
+        android:layout_alignLeft="@+id/Password"
+        android:layout_alignStart="@+id/Password" />
 
     <EditText
         android:layout_width="wrap_content"
@@ -152,10 +125,22 @@
         android:ems="10"
         android:id="@+id/email"
         android:background="#ffffff"
-        android:layout_alignBaseline="@+id/textView6"
-        android:layout_alignBottom="@+id/textView6"
-        android:layout_toRightOf="@+id/textView2"
-        android:layout_toEndOf="@+id/textView2" />
+        android:layout_below="@+id/repassword"
+        android:layout_toRightOf="@+id/textView5"
+        android:layout_toEndOf="@+id/textView5"
+        android:layout_marginTop="15dp" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Re-enter Email:"
+        android:id="@+id/textView7"
+        android:layout_below="@+id/repassword"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="60dp" />
+
+
 
     <EditText
         android:layout_width="wrap_content"
@@ -165,8 +150,8 @@
         android:id="@+id/reemail"
         android:background="#ffffff"
         android:layout_alignTop="@+id/textView7"
-        android:layout_alignRight="@+id/repassword"
-        android:layout_alignEnd="@+id/repassword" />
+        android:layout_toRightOf="@+id/textView5"
+        android:layout_toEndOf="@+id/textView5" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -174,9 +159,10 @@
         android:textAppearance="?android:attr/textAppearanceMedium"
         android:text="Address:"
         android:id="@+id/addresst"
-        android:layout_alignTop="@+id/address"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
+        android:layout_alignBaseline="@+id/address"
+        android:layout_alignBottom="@+id/address"
+        android:layout_alignRight="@+id/textView7"
+        android:layout_alignEnd="@+id/textView7" />
     <EditText
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -184,10 +170,11 @@
         android:ems="10"
         android:id="@+id/address"
         android:background="#ffffff"
-        android:layout_marginTop="34dp"
-        android:layout_below="@+id/textView7"
-        android:layout_alignLeft="@+id/email"
-        android:layout_alignStart="@+id/email" />
+        android:layout_marginTop="18dp"
+        android:layout_below="@+id/reemail"
+        android:layout_toRightOf="@+id/textView5"
+        android:layout_toEndOf="@+id/textView5"
+        android:hint="Building and Apt No."/>
 
 
     <Button
@@ -198,10 +185,12 @@
         android:textColor="#ffffff"
         android:background="#999999"
         android:onClick="register_register"
-        android:layout_marginBottom="56dp"
+        android:layout_marginBottom="55dp"
         android:layout_alignParentBottom="true"
-        android:layout_alignRight="@+id/textView5"
-        android:layout_alignEnd="@+id/textView5" />
+        android:layout_alignLeft="@+id/address"
+        android:layout_alignStart="@+id/address"
+        android:layout_marginLeft="15dp"
+        android:layout_marginStart="15dp" />
 
     <Button
         android:layout_width="wrap_content"
@@ -224,11 +213,12 @@
         android:text="I Agree to"
         android:id="@+id/policy"
         android:checked="false"
-        android:layout_above="@+id/r_submit"
+        android:textSize="12dp"
+        android:textStyle="bold"
+        android:layout_below="@+id/addresst"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
-        android:textSize="12dp"
-        android:textStyle="bold" />
+        android:layout_marginTop="22dp" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -256,5 +246,15 @@
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
         android:layout_marginBottom="25dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Email"
+        android:id="@+id/textView6"
+        android:layout_alignTop="@+id/email"
+        android:layout_alignRight="@+id/textView7"
+        android:layout_alignEnd="@+id/textView7" />
 
 </RelativeLayout>
