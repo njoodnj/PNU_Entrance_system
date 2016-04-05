@@ -83,7 +83,7 @@ public class invite extends Activity {
             int tmp;
 
             try {
-                URL url = new URL("http://192.168.8.106/ES/invite.php");
+                URL url = new URL("http://192.168.1.108/ES/Invite.php");
                 String urlParams = "rid="+rid+"&name="+name+"&Number="+Number;
 
                 HttpURLConnection httpURLConnection = (HttpURLConnection) url.openConnection();

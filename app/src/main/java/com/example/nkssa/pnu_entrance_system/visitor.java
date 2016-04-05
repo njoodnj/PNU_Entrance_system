@@ -39,6 +39,7 @@ public class visitor extends Activity implements View.OnClickListener {
     ArrayList<Button> buttonDelete = new ArrayList<Button>();
 
 
+
     JSONArray arrayBiodata;
 
     @Override

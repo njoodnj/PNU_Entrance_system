@@ -13,6 +13,7 @@
     android:orientation="vertical"
     tools:showIn="@layout/activity_visitor" android:background="#fef6c8">
 
+
     <HorizontalScrollView
         android:id="@+id/horizontalScrollView"
         android:layout_width="347dp"

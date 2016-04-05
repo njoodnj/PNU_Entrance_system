@@ -46,6 +46,7 @@ public class update extends Activity {
         welcome = getIntent().getStringExtra("r_name");
         ID.setText(id);
 
+
     }
 
     public void update_cancel(View v){
