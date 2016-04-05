@@ -40,14 +40,23 @@ public class update extends Activity {
         currentpass = (EditText) findViewById(R.id.currentpass);
         ID = (TextView) findViewById(R.id.update_id);
         id = getIntent().getStringExtra("r_id");
+        name = getIntent().getStringExtra("r_name");
+        email = getIntent().getStringExtra("r_email");
+        address = getIntent().getStringExtra("r_address");
+        welcome = getIntent().getStringExtra("r_name");
         ID.setText(id);
 
     }
 
     public void update_cancel(View v){
 
-        startActivity(new Intent(this, User_Home.class));
-    }
+        Intent i = new Intent(ctx, User_Home.class);
+        i.putExtra("r_id", id);
+        i.putExtra("r_address", address);
+        i.putExtra("r_email",email);
+        i.putExtra("r_name", name);
+        i.putExtra("r_name", welcome);
+        startActivity(i);}
 
     public void update_function(View v) {
 
@@ -103,7 +112,7 @@ public class update extends Activity {
 
 
             try {
-                URL url = new URL("http://192.168.8.106/ES/update.php");
+                URL url = new URL("http://192.168.1.108/ES/update.php");
                 String urlParams = "id="+id+"&email="+email+"&pass="+pass+"&cupass="+cupass+"&address="+address+"&name="+name+"&welcome="+welcome;
 
                 HttpURLConnection httpURLConnection = (HttpURLConnection) url.openConnection();

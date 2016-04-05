@@ -42,13 +42,7 @@
         android:onClick="invite1"/>
 
 
-    <Button
-        android:id="@+id/r_cancel"
-        android:layout_width="186dp"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center_horizontal"
-        android:text="Cancel"
-        android:onClick="visitor_cancel"/>
+
 
 
 
