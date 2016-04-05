@@ -40,6 +40,7 @@ public class visitor extends Activity implements View.OnClickListener {
 
 
 
+
     JSONArray arrayBiodata;
 
     @Override
