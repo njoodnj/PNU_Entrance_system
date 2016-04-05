@@ -37,10 +37,6 @@ public class visitor extends Activity implements View.OnClickListener {
     Button buttonTambahBiodata;
     //ArrayList<Button> buttonEdit = new ArrayList<Button>();
     ArrayList<Button> buttonDelete = new ArrayList<Button>();
-
-
-
-
     JSONArray arrayBiodata;
 
     @Override
