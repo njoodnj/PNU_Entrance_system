@@ -43,7 +43,10 @@ public class invite extends Activity {
 
     }
 
+    public void invite_cancel(View v){
 
+        onBackPressed();
+    }
 
 
 

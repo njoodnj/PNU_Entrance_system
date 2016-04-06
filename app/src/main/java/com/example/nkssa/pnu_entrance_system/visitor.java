@@ -145,10 +145,13 @@ public class visitor extends Activity implements View.OnClickListener {
         }
     }
 
+    public void visitor_cancel(View v){
+
+        onBackPressed();
+        }
 
 
-
-    public  void invite1(View view){
+    public  void invite1(View view) {
         String extraid= getIntent().getStringExtra("r_id");
         Intent i = new Intent(getApplicationContext(),invite.class);
         i.putExtra("r_id",extraid);
