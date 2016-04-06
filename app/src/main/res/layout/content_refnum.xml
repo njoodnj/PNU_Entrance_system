@@ -14,7 +14,7 @@
 
 
 
-    android:background="#fef6c8">
+    android:background="@drawable/backgroundpattern">
 
 
     <TextView

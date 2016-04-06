@@ -11,7 +11,7 @@
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
     tools:context="com.example.nkssa.pnu_entrance_system.contactus"
     tools:showIn="@layout/activity_contactus"
-    android:background="#fef5c7"
+    android:background="@drawable/backgroundpattern"
     android:touchscreenBlocksFocus="true">
 
     <TextView

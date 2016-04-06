@@ -11,7 +11,7 @@
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
     tools:context="com.example.nkssa.pnu_entrance_system.visitor"
     android:orientation="vertical"
-    tools:showIn="@layout/activity_visitor" android:background="#fef6c8">
+    tools:showIn="@layout/activity_visitor" android:background="@drawable/backgroundpattern">
 
 
     <HorizontalScrollView

@@ -10,7 +10,8 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
     tools:context="com.example.nkssa.pnu_entrance_system.mainReg"
-    tools:showIn="@layout/activity_main_reg">
+    tools:showIn="@layout/activity_main_reg"
+    android:background="@drawable/backgroundpattern">
 
     <Button
         android:layout_width="250dp"

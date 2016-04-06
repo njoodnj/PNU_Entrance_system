@@ -11,7 +11,7 @@
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
     tools:context="com.example.nkssa.pnu_entrance_system.update"
     tools:showIn="@layout/activity_update"
-    android:background="#fef6c8">
+    android:background="@drawable/backgroundpattern">
 
     <TextView
         android:layout_width="wrap_content"

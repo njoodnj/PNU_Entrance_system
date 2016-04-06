@@ -10,7 +10,7 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
     tools:context="com.example.nkssa.pnu_entrance_system.auth"
-    tools:showIn="@layout/activity_auth" android:background="#fef6c8">
+    tools:showIn="@layout/activity_auth" android:background="@drawable/backgroundpattern">
 
 
     <TextView
