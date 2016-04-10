@@ -10,8 +10,7 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
     tools:context="com.example.nkssa.pnu_entrance_system.Driver_Home"
-    tools:showIn="@layout/activity_driver__home"
-    android:background="@drawable/backgroundpattern">
+    tools:showIn="@layout/activity_driver__home">
 
 
     <TextView

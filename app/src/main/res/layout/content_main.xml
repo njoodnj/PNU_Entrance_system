@@ -67,28 +67,17 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="10dp" />
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceSmall"
-        android:text="Forget password?"
-        android:id="@+id/forgetpasword"
-        android:layout_marginTop="21dp"
-        android:layout_below="@+id/main_login"
-        android:layout_centerHorizontal="true" />
-
     <ImageButton
         android:layout_width="150dp"
         android:layout_height="35dp"
         android:id="@+id/main_register"
         android:background="@drawable/nu"
         android:clickable="true"
-        android:layout_marginTop="30dp"
+        android:layout_marginTop="62dp"
         android:onClick="register_register"
-        android:layout_below="@+id/forgetpasword"
-        android:layout_toLeftOf="@+id/contactus"
-        android:layout_marginRight="13dp"
-        android:layout_marginEnd="13dp" />
+        android:layout_below="@+id/main_login"
+        android:layout_toLeftOf="@+id/main_login"
+        android:layout_toStartOf="@+id/main_login" />
 
     <ImageButton
         android:layout_width="150dp"
@@ -98,9 +87,7 @@
         android:clickable="true"
         android:onClick="contactus"
         android:layout_alignTop="@+id/main_register"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true"
-        android:layout_marginRight="24dp"
-        android:layout_marginEnd="24dp" />
+        android:layout_toRightOf="@+id/main_login"
+        android:layout_toEndOf="@+id/main_login" />
 
 </RelativeLayout>
