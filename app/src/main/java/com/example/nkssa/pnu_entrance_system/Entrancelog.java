@@ -146,6 +146,7 @@ public class Entrancelog extends Activity implements View.OnClickListener {
         onBackPressed();
     }
 
+
     public void onClick(View view) {
 
             /*if (view.getId() == R.id.buttonTambahBiodata) {

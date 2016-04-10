@@ -28,6 +28,8 @@ public class mainReg  extends AppCompatActivity {
         startActivity(new Intent(this,MainActivity.class));
     }
 
+
 }
+
 
 
