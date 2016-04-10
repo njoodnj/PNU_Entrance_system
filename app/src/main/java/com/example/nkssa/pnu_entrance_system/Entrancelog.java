@@ -141,7 +141,10 @@ public class Entrancelog extends Activity implements View.OnClickListener {
         }
     }
 
+    public void entrance_cancel(View v){
 
+        onBackPressed();
+    }
 
     public void onClick(View view) {
 

@@ -9,9 +9,10 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
-    tools:context="com.example.nkssa.pnu_entrance_system.Entrancelog"
-    tools:showIn="@layout/activity_entrancelog"
-    android:background="@drawable/backgroundpattern">
+    tools:context="com.example.nkssa.pnu_entrance_system.visitor"
+    android:orientation="vertical"
+    tools:showIn="@layout/activity_entrancelog" android:background="@drawable/backgroundpattern">
+
 
     <HorizontalScrollView
         android:id="@+id/horizontalScrollView"
@@ -34,6 +35,25 @@
         </ScrollView>
 
     </HorizontalScrollView>
+
+
+
+    <Button
+        android:layout_width="161dp"
+        android:layout_height="wrap_content"
+        android:text="Cancel"
+        android:id="@+id/v_cancel"
+        android:textColor="#000000"
+        android:onClick="entrance_cancel"
+        android:layout_alignTop="@+id/buttonTambahBiodata"
+        android:layout_alignRight="@+id/buttonTambahBiodata"
+        android:layout_alignEnd="@+id/buttonTambahBiodata"
+        android:layout_alignBottom="@+id/buttonTambahBiodata"
+        android:layout_gravity="center_horizontal" />
+
+
+
+
 
 
 </LinearLayout>

@@ -23,4 +23,11 @@ public class mainReg  extends AppCompatActivity {
         Intent i = new Intent(getApplicationContext(),depregister.class);
         startActivity(i);}
 
+    public void mainreg_cancel(View v){
+
+        startActivity(new Intent(this,MainActivity.class));
+    }
+
 }
+
+

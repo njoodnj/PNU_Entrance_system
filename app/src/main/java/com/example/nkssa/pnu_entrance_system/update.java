@@ -50,13 +50,8 @@ public class update extends Activity {
 
     public void update_cancel(View v){
 
-        Intent i = new Intent(ctx, User_Home.class);
-        i.putExtra("r_id", id);
-        i.putExtra("r_address", address);
-        i.putExtra("r_email",email);
-        i.putExtra("r_name", name);
-        i.putExtra("r_name", welcome);
-        startActivity(i);}
+        onBackPressed();
+    }
 
     public void update_function(View v) {
 
