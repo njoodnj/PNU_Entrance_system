@@ -133,7 +133,7 @@ public class Register extends AppCompatActivity {
 
 
             try {
-                URL url = new URL("http://192.168.8.100/ES/register.php");
+                URL url = new URL("http://192.168.100.4/ES/register.php");
 
                 String urlParams = "id="+id+"&name="+name+"&pass="+pass+"&email="+email+"&address="+address+"&mac=" +mac;
 

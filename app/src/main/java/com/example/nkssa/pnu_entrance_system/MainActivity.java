@@ -76,7 +76,7 @@ public class MainActivity extends Activity {
             int tmp;
 
             try {
-                URL url = new URL("http://192.168.8.100/ES/login.php");
+                URL url = new URL("http://192.168.1.100/ES/login.php");
                 String urlParams = "r_id="+id+"&r_password="+password;
 
                 HttpURLConnection httpURLConnection = (HttpURLConnection) url.openConnection();
@@ -154,7 +154,7 @@ public class MainActivity extends Activity {
                 }
 
                 if (ROLE.equals("nothing")){
-                    s="username or password is incorrect";
+                    s="ID or password is incorrect";
 
                     Toast.makeText(ctx, s, Toast.LENGTH_LONG).show();
                     Intent i = new Intent(ctx, MainActivity.class);

@@ -41,41 +41,40 @@
         android:visibility="invisible"/>
 
 
-
-
     <TableLayout
         android:id="@+id/tbl_test"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:background="#000000"
         android:orientation="vertical"
-        android:layout_marginTop="25dp"
         android:stretchColumns="2"
         android:layout_below="@+id/uwelcome"
         android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true">
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="44dp"
+        >
 
         <TableRow android:background="#ffffff" android:layout_margin="1dp">
 
-            <TextView android:text="ID" android:layout_column="0"
-                android:width="50dp"
-                android:textAppearance="?android:attr/textAppearanceMedium"/>
+            <TextView android:text="ID:" android:layout_column="0"
+                android:width="100dp"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textStyle="bold" />
 
-            <TextView android:text="name" android:layout_column="1"
-                android:width="70dp"
-                android:textAlignment="center"
-                android:textAppearance="?android:attr/textAppearanceMedium"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="id                    "
+                android:id="@+id/rid"
+                android:layout_above="@+id/name"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
 
-            <TextView android:text="refrence num" android:layout_column="2"
-                android:textAlignment="center"
-                android:width="30dp"
-                android:textAppearance="?android:attr/textAppearanceMedium"/>
 
-            <TextView android:text="number" android:layout_column="2"
-                android:textAlignment="center"
-                android:width="30dp"
 
-                android:textAppearance="?android:attr/textAppearanceMedium"/>
+
+
         </TableRow>
 
 
@@ -86,15 +85,12 @@
             android:layout_marginRight="1dp"
             android:layout_marginBottom="1dp">
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+            <TextView android:text="name:" android:layout_column="0"
+                android:width="100dp"
+
                 android:textAppearance="?android:attr/textAppearanceSmall"
-                android:text="id "
-                android:id="@+id/rid"
-                android:layout_above="@+id/name"
-                android:layout_alignParentLeft="true"
-                android:layout_alignParentStart="true" />
+                android:textStyle="bold" />
+
 
             <TextView
                 android:layout_width="wrap_content"
@@ -104,35 +100,67 @@
                 android:id="@+id/name"
                 android:layout_centerVertical="true"
                 android:layout_alignParentLeft="true"
-                android:layout_alignParentStart="true" />
+                android:layout_alignParentStart="true"
+                android:layout_column="1" />
 
+            <TextView android:text="" android:layout_column="3" />
+
+        </TableRow>
+        <TableRow
+            android:background="#ffffff"
+            android:layout_marginLeft="1dp"
+            android:layout_marginRight="1dp"
+            android:layout_marginBottom="1dp">
+
+            <TextView android:text="refrence number:" android:layout_column="0"
+
+                android:width="150dp"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textStyle="bold" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textAppearance="?android:attr/textAppearanceSmall"
-                android:text="reference num"
+                android:text="referenc"
                 android:id="@+id/ref"
                 android:layout_below="@+id/name"
                 android:layout_alignParentLeft="true"
-                android:layout_alignParentStart="true" />
+                android:layout_alignParentStart="true"
+                android:layout_column="1" />
+
+            <TextView android:text="" android:layout_column="3" />
+
+        </TableRow>
+        <TableRow
+            android:background="#ffffff"
+            android:layout_marginLeft="1dp"
+            android:layout_marginRight="1dp"
+            android:layout_marginBottom="1dp">
+
+            <TextView android:text="number of visits:" android:layout_column="0"
+                android:width="100dp"
+
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textStyle="bold" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textAppearance="?android:attr/textAppearanceSmall"
-                android:text="number of visits "
+                android:text="number "
                 android:id="@+id/number"
                 android:layout_below="@+id/ref"
                 android:layout_alignParentLeft="true"
                 android:layout_alignParentStart="true" />
 
-            <TextView android:text="" android:layout_column="3" />
+ <TextView android:text="" android:layout_column="3" />
 
         </TableRow>
 
-
     </TableLayout>
+
+
 
 
 </RelativeLayout>

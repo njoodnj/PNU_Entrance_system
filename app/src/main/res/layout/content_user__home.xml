@@ -10,9 +10,10 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
     tools:context="com.example.nkssa.pnu_entrance_system.User_Home"
-    tools:showIn="@layout/activity_user__home">
+    tools:showIn="@layout/activity_user__home"
+    android:background="@drawable/backgroundpattern">
 
-    <!--update onclick button for updatebutton-->
+
 
     <TextView
         android:layout_width="wrap_content"
