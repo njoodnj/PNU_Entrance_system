@@ -112,7 +112,7 @@ public class update extends Activity {
 
 
             try {
-                URL url = new URL("http://192.168.1.108/ES/update.php");
+                URL url = new URL("http://192.168.8.100/ES/update.php");
                 String urlParams = "id="+id+"&email="+email+"&pass="+pass+"&cupass="+cupass+"&address="+address+"&name="+name+"&welcome="+welcome;
 
                 HttpURLConnection httpURLConnection = (HttpURLConnection) url.openConnection();

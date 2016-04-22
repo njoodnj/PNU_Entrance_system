@@ -89,39 +89,46 @@ public class depregister extends Activity {
         email = r_email.getText().toString();
         remail = r_reemail.getText().toString();
         address = r_address.getText().toString();
-        relation= r_relation.getText().toString();
-        rid= r_rid.getText().toString();
-        mac =Mac.getText().toString();
+        relation = r_relation.getText().toString();
+        rid = r_rid.getText().toString();
+        mac = Mac.getText().toString();
 
-        if( r_ID.getText().toString().length() == 0 ){
-            r_ID.setError( "ID is required!" );}
-        if( r_FullName.getText().toString().length() == 0 ){
-            r_FullName.setError( "Name is required!" );}
-        if( r_Password.getText().toString().length() == 0 ){
-            r_Password.setError( "Password is required!" );}
-        if( r_repassword.getText().toString().length() == 0 ){
-            r_repassword.setError( "Re Enter your password" );}
-        if( r_email.getText().toString().length() == 0 ){
-            r_email.setError( "Email is required!" );}
-        if( r_reemail.getText().toString().length() == 0 ){
-            r_reemail.setError( "Re Enter your email" );}
-        if( r_address.getText().toString().length() == 0 ){
-            r_address.setError("Address is required!");}
-        if( r_relation.getText().toString().length() == 0 ){
+        if (r_ID.getText().toString().length() == 0) {
+            r_ID.setError("ID is required!");
+        }
+        if (r_FullName.getText().toString().length() == 0) {
+            r_FullName.setError("Name is required!");
+        }
+        if (r_Password.getText().toString().length() == 0) {
+            r_Password.setError("Password is required!");
+        }
+        if (r_repassword.getText().toString().length() == 0) {
+            r_repassword.setError("Re Enter your password");
+        }
+        if (r_email.getText().toString().length() == 0) {
+            r_email.setError("Email is required!");
+        }
+        if (r_reemail.getText().toString().length() == 0) {
+            r_reemail.setError("Re Enter your email");
+        }
+        if (r_address.getText().toString().length() == 0) {
+            r_address.setError("Address is required!");
+        }
+        if (r_relation.getText().toString().length() == 0) {
             r_relation.setError("Relation is required!");}
-        if( r_rid.getText().toString().length() == 0 ){
+        if (r_rid.getText().toString().length() == 0) {
             r_rid.setError("Resident ID is required!");}
-        if (!r_policy.isChecked()){
+        if (!r_policy.isChecked()) {
             r_policy.setError("you must agree to policy");}
-
+        if (!email.equals(remail)) {
+            r_reemail.setError("email dose not match");}
         else {
-            if( !pass.equals(repass )){
-                r_repassword.setError( "Password dose not match" );}
-            if( !email.equals(remail )){
-                r_reemail.setError( "email dose not match" );}
-            else {
+
+            if (!pass.equals(repass)) {
+                r_repassword.setError("Password dose not match");
+            } else {
                 BackGround b = new BackGround();
-                b.execute(id, rid, name, pass, email, address, relation,mac);
+                b.execute(id, rid, name, pass, email, address, relation, mac);
             }
         }
     }

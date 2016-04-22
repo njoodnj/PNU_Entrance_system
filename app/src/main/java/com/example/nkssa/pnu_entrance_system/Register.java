@@ -104,12 +104,12 @@ public class Register extends AppCompatActivity {
             r_address.setError("Address is required!");}
         if (!r_policy.isChecked()){
             r_policy.setError("you must agree to policy");}
-
+        if( !email.equals(remail )){
+            r_reemail.setError( "Email dose not match" );}
         else {
             if( !pass.equals(repass )){
                 r_repassword.setError( "Password dose not match" );}
-            if( !email.equals(remail )){
-                r_reemail.setError( "Email dose not match" );}
+
             else {
 
                 BackGround b = new BackGround();

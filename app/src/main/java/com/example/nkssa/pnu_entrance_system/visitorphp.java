@@ -4,7 +4,7 @@ package com.example.nkssa.pnu_entrance_system;
  * Created by bashayer93 on 3/27/2016.
  */
 public class visitorphp extends visitorchanges {
-    String URL = "http://192.168.1.108/ES/visitor.php";
+    String URL = "http://192.168.8.100/ES/visitor.php";
     String url = "";
     String response = "";
 
