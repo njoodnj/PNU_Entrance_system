@@ -55,25 +55,25 @@ public class visitor extends Activity implements View.OnClickListener {
         TableRow barisTabel = new TableRow(this);
         barisTabel.setBackgroundColor(Color.CYAN);
 
-        TextView viewHeaderrId = new TextView(this);
+       // TextView viewHeaderrId = new TextView(this);
         TextView viewHeaderName = new TextView(this);
         TextView viewHeaderRefnum = new TextView(this);
         TextView viewHeaderNumber = new TextView(this);
         TextView viewHeaderAction = new TextView(this);
 
-        viewHeaderrId.setText("rID");
+        //viewHeaderrId.setText("rID");
         viewHeaderName.setText("Name");
         viewHeaderRefnum.setText("Refnum");
         viewHeaderNumber.setText("Number");
         viewHeaderAction.setText("");
 
-        viewHeaderrId.setPadding(5, 1, 5, 1);
+       // viewHeaderrId.setPadding(5, 1, 5, 1);
         viewHeaderName.setPadding(5, 1, 5, 1);
         viewHeaderRefnum.setPadding(5, 1, 5, 1);
         viewHeaderNumber.setPadding(5, 1, 5, 1);
         viewHeaderAction.setPadding(5, 1, 5, 1);
 
-        barisTabel.addView(viewHeaderrId);
+       // barisTabel.addView(viewHeaderrId);
         barisTabel.addView(viewHeaderName);
         barisTabel.addView(viewHeaderRefnum);
         barisTabel.addView(viewHeaderNumber);
@@ -103,10 +103,10 @@ public class visitor extends Activity implements View.OnClickListener {
                     barisTabel.setBackgroundColor(Color.LTGRAY);
                 }
 
-                TextView viewrId = new TextView(this);
-                viewrId.setText(rid);
-                viewrId.setPadding(5, 1, 5, 1);
-                barisTabel.addView(viewrId);
+                //TextView viewrId = new TextView(this);
+               // viewrId.setText(rid);
+               // viewrId.setPadding(5, 1, 5, 1);
+               // barisTabel.addView(viewrId);
 
                 TextView viewName = new TextView(this);
                 viewName.setText(name);
@@ -147,14 +147,38 @@ public class visitor extends Activity implements View.OnClickListener {
 
     public void visitor_cancel(View v){
 
-        onBackPressed();
-        }
+        String extraid= getIntent().getStringExtra("r_id");
+        String extrapass= getIntent().getStringExtra("r_password");
+        String extraname= getIntent().getStringExtra("r_name");
+        String extraemail= getIntent().getStringExtra("r_email");
+        String extraaddress= getIntent().getStringExtra("r_address");
+
+        Intent i = new Intent(getApplicationContext(),User_Home.class);
+        i.putExtra("r_id",extraid);
+        i.putExtra("r_password",extrapass);
+        i.putExtra("r_name", extraname);
+        i.putExtra("r_email",extraemail);
+        i.putExtra("r_address",extraaddress);
+
+        startActivity(i);
+    }
+
 
 
     public  void invite1(View view) {
         String extraid= getIntent().getStringExtra("r_id");
+        String extrapass= getIntent().getStringExtra("r_password");
+        String extraname= getIntent().getStringExtra("r_name");
+        String extraemail= getIntent().getStringExtra("r_email");
+        String extraaddress= getIntent().getStringExtra("r_address");
+
         Intent i = new Intent(getApplicationContext(),invite.class);
         i.putExtra("r_id",extraid);
+        i.putExtra("r_password",extrapass);
+        i.putExtra("r_name", extraname);
+        i.putExtra("r_email",extraemail);
+        i.putExtra("r_address",extraaddress);
+
         startActivity(i);
     }
     public void onClick(View view) {

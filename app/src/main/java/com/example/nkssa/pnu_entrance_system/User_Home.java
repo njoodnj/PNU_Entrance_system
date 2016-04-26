@@ -98,6 +98,10 @@ public class User_Home extends Activity {
     public  void visitor(View view){
         Intent i = new Intent(getApplicationContext(),visitor.class);
         i.putExtra("r_id",id);
+        i.putExtra("r_password",pass);
+        i.putExtra("r_name", name);
+        i.putExtra("r_email",email);
+        i.putExtra("r_address",address);
         startActivity(i);}
 
 }

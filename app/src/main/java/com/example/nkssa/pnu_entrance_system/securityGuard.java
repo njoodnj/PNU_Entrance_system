@@ -117,7 +117,7 @@ public class securityGuard extends AppCompatActivity {
             int tmp;
 
             try {
-                URL url = new URL("http://192.168.1.100/ES/refnum.php");
+                URL url = new URL("http://192.168.8.100/ES/refnum.php");
                 String urlParams = "Refnum="+Refnum;
 
                 HttpURLConnection httpURLConnection = (HttpURLConnection) url.openConnection();
@@ -177,7 +177,7 @@ public class securityGuard extends AppCompatActivity {
 
                 Toast.makeText(ctx, s, Toast.LENGTH_LONG).show();
                 Intent i = new Intent(ctx, securityGuard.class);
-
+i.putExtra("r_name",swelcome);
                 startActivity(i);
             }
         }

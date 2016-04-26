@@ -45,8 +45,20 @@ public class invite extends Activity {
 
     public void invite_cancel(View v){
 
-        startActivity(new Intent(this,visitor.class));
-    }
+        String extraid= getIntent().getStringExtra("r_id");
+        String extrapass= getIntent().getStringExtra("r_password");
+        String extraname= getIntent().getStringExtra("r_name");
+        String extraemail= getIntent().getStringExtra("r_email");
+        String extraaddress= getIntent().getStringExtra("r_address");
+
+        Intent i = new Intent(getApplicationContext(),visitor.class);
+        i.putExtra("r_id",extraid);
+        i.putExtra("r_password",extrapass);
+        i.putExtra("r_name", extraname);
+        i.putExtra("r_email",extraemail);
+        i.putExtra("r_address",extraaddress);
+
+        startActivity(i);    }
 
 
 
@@ -64,8 +76,16 @@ public class invite extends Activity {
         else {
             BackGround b = new BackGround();
             b.execute(Rid, Name, NUmber);
+            String extrapass= getIntent().getStringExtra("r_password");
+            String extraname= getIntent().getStringExtra("r_name");
+            String extraemail= getIntent().getStringExtra("r_email");
+            String extraaddress= getIntent().getStringExtra("r_address");
             Intent i = new Intent(ctx, visitor.class);
             i.putExtra("r_id", Rid);
+            i.putExtra("r_password",extrapass);
+            i.putExtra("r_name", extraname);
+            i.putExtra("r_email",extraemail);
+            i.putExtra("r_address",extraaddress);
             startActivity(i);
 
         }
@@ -83,7 +103,7 @@ public class invite extends Activity {
             int tmp;
 
             try {
-                URL url = new URL("http://192.168.1.100/ES/Invite.php");
+                URL url = new URL("http://192.168.8.100/ES/Invite.php");
                 String urlParams = "rid="+rid+"&name="+name+"&Number="+Number;
 
                 HttpURLConnection httpURLConnection = (HttpURLConnection) url.openConnection();

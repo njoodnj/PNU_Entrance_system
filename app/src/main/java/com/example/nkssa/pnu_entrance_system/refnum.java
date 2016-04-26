@@ -31,7 +31,7 @@ public class refnum extends Activity {
                 refnum.this.startActivity(mainIntent);
                 refnum.this.finish();
             }
-        }, 10000);
+        }, 5000);
         sname = getIntent().getStringExtra("r_name");
 
         ridTV = (TextView) findViewById(R.id.rid);
