@@ -73,7 +73,7 @@ public class securityGuard extends AppCompatActivity {
 
                         Intent i = new Intent(ctx, scan.class);
                         i.putExtra("r_name",sname);
-                        i.putExtra("id",sid);
+                        i.putExtra("r_id",sid);
                         startActivity(i);
                     }
                 }
@@ -177,7 +177,15 @@ public class securityGuard extends AppCompatActivity {
 
                 Toast.makeText(ctx, s, Toast.LENGTH_LONG).show();
                 Intent i = new Intent(ctx, securityGuard.class);
-i.putExtra("r_name",swelcome);
+                i.putExtra("r_name",swelcome);
+                startActivity(i);
+            }
+            if (NUMBER.equals("notexist")) {
+                s="the refrence number does not exist";
+
+                Toast.makeText(ctx, s, Toast.LENGTH_LONG).show();
+                Intent i = new Intent(ctx, securityGuard.class);
+                i.putExtra("r_name",swelcome);
                 startActivity(i);
             }
         }

@@ -20,7 +20,7 @@ import java.net.MalformedURLException;
 import java.net.URL;
 
 public class auth extends AppCompatActivity {
-    String id , name, email, address;
+    String id , name, email, address, sname, sid;
     String ID,NAME,timeStamp;
     TextView idTV ,nameTV, emailTV , addressTV;
     Context ctx;
@@ -38,7 +38,8 @@ public class auth extends AppCompatActivity {
         name = getIntent().getStringExtra("r_name");
         email = getIntent().getStringExtra("r_email");
         address = getIntent().getStringExtra("r_address");
-
+        sname = getIntent().getStringExtra("name");
+        sid = getIntent().getStringExtra("id");
 
         idTV.setText("ID No:"+id);
         nameTV.setText("Name: "+name);
@@ -53,11 +54,19 @@ public class auth extends AppCompatActivity {
         //Toast.makeText(ctx, id, Toast.LENGTH_LONG).show();
         BackGround b = new BackGround();
         b.execute(ID, NAME);
-        startActivity(new Intent(this, securityGuard.class));
-    }
+        Toast.makeText(auth.this, "User has been Authorized!",
+                Toast.LENGTH_SHORT).show();
+        Intent i = new Intent(auth.this, securityGuard.class);
+        i.putExtra("r_id",sid);
+        i.putExtra("r_name", sname);
+        startActivity(i);    }
     public void decline(View v){
-        startActivity(new Intent (this, securityGuard.class));
-    }
+        Toast.makeText(auth.this, "Use has been Declined!",
+                Toast.LENGTH_SHORT).show();
+        Intent i = new Intent(auth.this, securityGuard.class);
+        i.putExtra("r_id",sid);
+        i.putExtra("r_name",sname);
+        startActivity(i);    }
     class BackGround extends AsyncTask<String, String, String> {
 
 

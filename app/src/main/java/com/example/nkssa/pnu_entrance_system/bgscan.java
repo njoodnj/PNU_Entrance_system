@@ -35,7 +35,7 @@ public class bgscan extends AppCompatActivity {
         Id = getIntent().getStringExtra("mac"); // Id is the mac
         Password = "";
         sname = getIntent().getStringExtra("r_name");
-        sid = getIntent().getStringExtra("id");
+        sid = getIntent().getStringExtra("r_id");
 
 
         BackGround b = new BackGround();
@@ -103,6 +103,8 @@ public class bgscan extends AppCompatActivity {
                 s="The user is not validated yet";
                 Toast.makeText(ctx, s, Toast.LENGTH_LONG).show();
                 Intent i = new Intent(ctx, securityGuard.class);
+                i.putExtra("r_id",sid);
+                i.putExtra("r_name",sname);
                 startActivity(i);
             }
 
@@ -117,6 +119,7 @@ public class bgscan extends AppCompatActivity {
                 i.putExtra("r_email", EMAIL);
                 i.putExtra("r_address", ADDRESS);
                 i.putExtra("id",sid);
+                i.putExtra("name",sname);
 
 
                 startActivity(i);}
@@ -130,6 +133,8 @@ public class bgscan extends AppCompatActivity {
                 i.putExtra("r_email", EMAIL);
                 i.putExtra("r_address", ADDRESS);
                 i.putExtra("id",sid);
+                i.putExtra("name",sname);
+
 
                 startActivity(i);
             }
@@ -138,6 +143,8 @@ public class bgscan extends AppCompatActivity {
                 s="user does not exist";
                 Toast.makeText(ctx, s, Toast.LENGTH_LONG).show();
                 Intent i = new Intent(ctx, securityGuard.class);
+                i.putExtra("r_id",sid);
+                i.putExtra("r_name",sname);
 
                 startActivity(i);
             }}

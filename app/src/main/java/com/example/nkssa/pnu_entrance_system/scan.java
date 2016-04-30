@@ -32,7 +32,7 @@ public class scan extends AppCompatActivity {
         setContentView(R.layout.activity_scan);
 
         sname = getIntent().getStringExtra("r_name");
-        sid = getIntent().getStringExtra("id");
+        sid = getIntent().getStringExtra("r_id");
 
         listView = (ListView) findViewById(R.id.listView);
 
@@ -69,7 +69,7 @@ public class scan extends AppCompatActivity {
                         //Toast.makeText(ctx, mac, Toast.LENGTH_LONG).show();
                         Intent i = new Intent(ctx, bgscan.class);
                         i.putExtra("mac",mac);
-                        i.putExtra("id",sid);
+                        i.putExtra("r_id",sid);
                         i.putExtra("r_name",sname);
                         startActivity(i);
 
