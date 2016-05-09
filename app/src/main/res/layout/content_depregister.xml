@@ -55,7 +55,8 @@
         android:background="#ffffff"
         android:layout_above="@+id/textView3"
         android:layout_toRightOf="@+id/textView4"
-        android:layout_toEndOf="@+id/textView4" />
+        android:layout_toEndOf="@+id/textView4"
+        android:hint="10 digits" />
 
     <EditText
         android:layout_width="wrap_content"

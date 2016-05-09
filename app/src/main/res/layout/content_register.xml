@@ -59,7 +59,8 @@
         android:layout_alignLeft="@+id/FullName"
         android:layout_alignStart="@+id/FullName"
         android:layout_alignRight="@+id/FullName"
-        android:layout_alignEnd="@+id/FullName" />
+        android:layout_alignEnd="@+id/FullName"
+        android:hint="10 digits" />
 
     <EditText
         android:layout_width="wrap_content"
